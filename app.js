@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 30;
+let numeroLimite = 100;
 let numeroSecreto = numeroQq();
 let tentativas = 1;
 
@@ -17,7 +17,7 @@ function exibirTextos(ondoc, txt) {
 
 function exibirMensagemInicial() {
     exibirTextos('h1', 'Jogo do número secreto');
-    exibirTextos('p', 'Escolha um número entre 1 e 30');
+    exibirTextos('p', 'Escolha um número entre 1 e 100');
 }
 
 exibirMensagemInicial();
@@ -69,7 +69,7 @@ function reiniciarJogo() {
     limparcampo();
     tentativas = 1;
     exibirTextos('h1', 'Jogo do número secreto');
-    exibirTextos('p', 'Escolha um número entre 1 e 10');
+    exibirTextos('p', 'Escolha um número entre 1 e 100');
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute ('disabled', true);
 }
