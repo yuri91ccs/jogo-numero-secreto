@@ -9,15 +9,15 @@ let tentativas = 1;
 //let subttl = document.querySelector('p');
 //subttl.innerHTML = 'Escolha um número entre 1 e 30';
 
-function exibirTextos(tag, texto) {
-    let textosaps = document.querySelector(tag);
-    textosaps.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+function exibirTextos(ondoc, txt) {
+    let textosaps = document.querySelector(ondoc);
+    textosaps.innerHTML = txt;
+    responsiveVoice.speak(txt, 'Brazilian Portuguese Famale', {rate:1.2});
 }
 
 function exibirMensagemInicial() {
-    exibirTextos('p', 'Escolha um número entre 1 e 30');
     exibirTextos('h1', 'Jogo do número secreto');
+    exibirTextos('p', 'Escolha um número entre 1 e 30');
 }
 
 exibirMensagemInicial();
