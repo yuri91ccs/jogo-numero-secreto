@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 30;
+let numeroLimite = 100;
 let numeroSecreto = numeroQq();
 let tentativas = 1;
 
@@ -7,7 +7,7 @@ let tentativas = 1;
 //aprestc.innerHTML = 'Jogo do número secreto';
 
 //let subttl = document.querySelector('p');
-//subttl.innerHTML = 'Escolha um número entre 1 e 30';
+//subttl.innerHTML = 'Escolha um número entre 1 e 100';
 
 function exibirTextos(tag, texto) {
     let textosaps = document.querySelector(tag);
@@ -16,8 +16,8 @@ function exibirTextos(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextos('p', 'Escolha um número entre 1 e 30');
     exibirTextos('h1', 'Jogo do número secreto');
+    exibirTextos('p', 'Escolha um número entre 1 e 100');
 }
 
 exibirMensagemInicial();
