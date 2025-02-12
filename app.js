@@ -69,7 +69,7 @@ function reiniciarJogo() {
     limparcampo();
     tentativas = 1;
     exibirTextos('h1', 'Jogo do número secreto');
-    exibirTextos('p', 'Escolha um número entre 1 e 30');
+    exibirTextos('p', 'Escolha um número entre 1 e 100');
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute ('disabled', true);
 }
